@@ -1,11 +1,11 @@
 import './ProductPage.css'
 
 import React, { useContext, useEffect } from 'react';
+import Header from '../../components/Header/Header';
+import Banner from '../../components/Banner/Banner';
+import Main from '../../components/Main/Main';
+import Footer from '../../components/Footer/Footer';
 import { BannerContext } from '../../contexts/BannerContext';
-import Header from '../../components/Header/Header'
-import Banner from '../../components/Banner/Banner'
-import Footer from '../../components/Footer/Footer'
-
 function ProductPage() {
 
   const { titulo, setTitulo, subTitulo, setSubtitulo } = useContext(BannerContext);
@@ -17,12 +17,13 @@ function ProductPage() {
 
   return (
     <>
-    <Header/>
-    <Banner titulo={titulo} subTitulo={subTitulo} />
-    Product Page is render
-    <Footer/>
+      <Header />
+      <Banner titulo={titulo} subTitulo={subTitulo} />
+      <Main />
+      <Footer />
     </>
-  )
+  );
 }
+
 
 export default ProductPage
