@@ -1,5 +1,6 @@
 import './CardProduto.css';
 import PropTypes from 'prop-types';
+import DetalhesProdutoModal from '../DetalhesProdutoModal/DetalhesProdutoModal';
 
 function CardProduto(props) {
   const { foto, preço, nome, descricao, caracteristicas } = props;
@@ -24,9 +25,7 @@ function CardProduto(props) {
             </ul>
           </div>
           <div className="details-button">
-            <button type="button" className="btn-card">
-              MAIS SOBRE
-            </button>
+            <DetalhesProdutoModal foto={foto} preço={preço} nome={nome} descricao={descricao} caracteristicas={caracteristicas}/>
           </div>
         </div>
       </div>

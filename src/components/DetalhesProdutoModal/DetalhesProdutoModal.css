@@ -1,0 +1,9 @@
+.product-image {
+  max-width: 70%;
+  height: auto;
+}
+li {
+  padding-left: 35px;
+  background-image: url('../../assets/icon.png');
+  background-repeat: no-repeat;
+}
