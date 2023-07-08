@@ -33,14 +33,14 @@ function DetalhesProdutoModal(props) {
             <h5 className="text-end">{preço}</h5>
           </div>
           </div>
-          <h6 className="mt-4">Descrição:</h6>
+          <h5 className="mt-4">Descrição:</h5>
           <p>{descricao}</p>
-          <h6>Características:</h6>
-          <ul>
+          <h5>Características:</h5>
+          <div className='lista'>
             {caracteristicas.map((item, index) => (
-              <li key={index}>{item}</li>
+              <p key={index}>{item}</p>
             ))}
-          </ul>
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
