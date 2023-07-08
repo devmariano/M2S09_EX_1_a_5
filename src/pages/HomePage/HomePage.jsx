@@ -19,7 +19,7 @@ function HomePage() {
     <>
       <Header />
       <Banner titulo={titulo} subTitulo={subTitulo} />
-      <Main />
+      <div className="home">PÁGINA HOME</div>
       <Footer />
     </>
   );
